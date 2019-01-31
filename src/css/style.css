@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #f8f8f8;
+  font-family: 'Roboto', sans-serif;
+}
+input {
+  padding: 15px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #d1d1d1;
+  width: 100%;
+  font-size: 2rem;
+}
+input:focus {
+  outline: none;
+}
+.container {
+  width: 85%;
+  padding: 20px 10%;
+  margin: auto;
+  position: relative;
+}
+@media (max-width: 400px) {
+  .container {
+    width: 95%;
+  }
+}
+.container-user {
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  background: #fff;
+  border-radius: 5px;
+  margin-top: 1rem;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, .05);
+}
+.input-field {
+  position: relative;
+}
+.loader {
+  width: 30px;
+  height: 30px;
+  border: 3px solid blue;
+  border-bottom: none;
+  border-left: none;
+  border-radius: 50%;
+  position: absolute;
+  display: none;
+  right: 20px;
+  top: 15px;
+  animation: rotate 0.2s ease infinite;
+}
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.repo-wrapper {
+  padding: 20px 15px;
+  background: #fff;
+  border-radius: 5px;
+  margin-top: 1.5rem;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, .05);
+}
+.repo {
+  padding: 20px;
+  border-bottom: 1px solid #e1e1e1;
+}
+.repo:last-child {
+  border-bottom: none;
+}
+.repo-link {
+  text-decoration: none;
+}
+.repo-info {
+  padding: 5px 0;
+  display: inline-block;
+}
+.repo-info span {
+  font-weight: bold;
+}
+.user-wrapper {
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+}
+.user-avatar {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+.user-info {
+  flex-grow: 1;
+  padding-left: 20px;
+}
+.user-info h3 {
+  font-weight: normal;
+}
+.user-info span {
+  font-weight: bold;
+}
+.result-info {
+  padding-left: 15px;
+  font-style: italic;
+}
+
+img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"],
+img[alt="www.000webhost.com"] {
+  display: none !important;
+}
