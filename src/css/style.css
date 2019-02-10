@@ -93,7 +93,7 @@ input:focus {
 }
 .user-info {
   flex-grow: 1;
-  padding-left: 20px;
+  padding-left: 50px;
 }
 .user-info h3 {
   font-weight: normal;
@@ -109,4 +109,31 @@ input:focus {
 img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"],
 img[alt="www.000webhost.com"] {
   display: none !important;
+}
+
+@media (max-width: 425px) {
+  .container {
+    padding: 20px 5%;
+  }
+
+  .user-wrapper {
+    flex-direction: column;
+  }
+
+  .user-avatar {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .user-info {
+    padding-left: 10px;
+  }
+
+  .repo-info {
+    margin-bottom: 0;
+  }
+
+  .repo {
+    padding: 20px 0;
+  }
 }
